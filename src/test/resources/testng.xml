@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Paga系统测试套件">
+    <listeners>
+        <listener class-name="com.paga.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+    <test name="Paga系统CMS模块正向场景+反向测试用例">
+        <classes>
+            <class name="com.paga.cases.LoginTest"/>
+            <!--
+            <class name="com.paga.cases.TaskTypeTest"/> 
+            <class name="com.paga.cases.RequestBYTest"/> 
+            -->
+            <class name="com.paga.cases.AddTaskTest"/>          
+            <class name="com.paga.cases.StartTaskTest"/>
+            <class name="com.paga.cases.StartSubtaskTest"/>
+            <!-- query subtaskId -->      
+            <class name="com.paga.cases.SubtasktkIdTest"/> 
+             
+            <class name="com.paga.cases.AddLinkingCritTest"/>
+            <class name="com.paga.cases.RruleConditionTest"/>                       
+            <class name="com.paga.cases.AddPathTest"/>
+          	
+            <class name="com.paga.cases.UpdateSubTaskTest"/>
+            <class name="com.paga.cases.CompleteSubTaskTest"/>
+            <class name="com.paga.cases.NewSubTaskUUidTest"/>
+            
+            <class name="com.paga.cases.AddCommentTest"/> 
+            
+            <class name="com.paga.cases.CommentsTest"/> 
+            
+            <class name="com.paga.cases.RejectSubtaskTest"/>
+            
+            
+            <class name="com.paga.cases.NewSubTaskReJUUidTest"/>
+            
+            <class name="com.paga.cases.UpdateSubTaskReJTest"/>
+            
+            <class name="com.paga.cases.CompleteSubTaskReJTest"/>
+            
+            <class name="com.paga.cases.NewSubTaskReJComUUidTest"/>
+                      
+                                                   
+            <class name="com.paga.cases.WriteTest"/>
+            <class name="com.paga.cases.ApproveSubTaskReviewTest"/>        
+            <class name="com.paga.cases.NewSubTaskDeployedUUidTest"/> 
+                                                        
+          	<class name="com.paga.cases.RuleZipTest"/>
+          	<class name="com.paga.cases.ApproveSubTaskDoneTest"/>
+      		 
+          	<class name="com.paga.cases.NewTaskReviewUUidTest"/> 
+          	<class name="com.paga.cases.ApproveTaskTest"/>
+          	
+          	<class name="com.paga.cases.NewTaskDoneUUidTest"/>
+          	<class name="com.paga.cases.ApproveTaskDoneTest"/>
+          	<!---->
+          	
+     
+        </classes>
+
+    </test>
+
+</suite>
