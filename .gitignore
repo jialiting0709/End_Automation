@@ -1,1 +1,9 @@
-/target/
+*.idea
+*.iml
+/src
+/target
+/test-output
+*.classpath
+*.project
+*.prefs
+/config
